@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backGround"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_main">
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+        <TextView
+            android:id="@+id/numLeft"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/numLeft"
+            android:textSize="30dp"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/operador"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/operador"
+            android:textSize="30dp"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/numRght"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/numRight"
+            android:textSize="30dp"
+            android:textColor="@color/blanco"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <Button
+            android:id="@+id/btnGenerar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:text="@string/generar_num"
+            android:background="@color/btnGenerar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+            <Button
+                android:id="@+id/btnSumar"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textColor="@color/blanco"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/btnSuma"
+                android:background="@color/sumar"/>
+            <Button
+                android:id="@+id/btnRestar"
+                android:layout_width="0dp"
+                android:textColor="@color/blanco"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/btnResta"
+                android:background="@color/restar"/>
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/blanco"
+                android:text="@string/btnC"
+                android:background="@color/C"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <Button
+            android:id="@+id/btnMultiplicar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnMultiplica"
+            android:textColor="@color/blanco"
+            android:background="@color/multiplicar"/>
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/btnDividir"
+            android:textColor="@color/blanco"
+            android:background="@color/dividir"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <Button
+            android:id="@+id/btnResultPar"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:text="@string/resultado_par"
+            android:background="@color/resultado_par"/>
+        <Button
+            android:id="@+id/btnResultPrimo"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textColor="@color/blanco"
+            android:layout_marginTop="10dp"
+            android:text="@string/resultado_primo"
+            android:background="@color/resultado_primo"/>
+
+        <TextView
+            android:id="@+id/resultado"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/resultado"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/blanco"
+            android:background="@color/resultado"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/contetResultado"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="ERROR"
+            android:textColor="@color/blanco"
+            android:background="@color/contentResult"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/resultadoPrimoPAr"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:text="Error"
+            android:textColor="@color/blanco"
+            android:background="@color/resultado"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
